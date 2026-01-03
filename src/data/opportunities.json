@@ -1,0 +1,28 @@
+[
+  {
+    "id": "1",
+    "title": "Software Engineer",
+    "organization": "ABC Tech",
+    "location": "Addis Ababa",
+    "type": "Job",
+    "tags": ["Remote", "Full-time"],
+    "deadline": "2026-01-15",
+    "link": "https://example.com/job/1",
+    "verified": true,
+    "featured": true,
+    "source": "Telegram"
+  },
+  {
+    "id": "2",
+    "title": "Marketing Internship",
+    "organization": "XYZ Group",
+    "location": "Remote",
+    "type": "Internship",
+    "tags": ["Internship", "Remote"],
+    "deadline": "2026-01-20",
+    "link": "https://example.com/internship/2",
+    "verified": true,
+    "featured": false,
+    "source": "Website"
+  }
+]
