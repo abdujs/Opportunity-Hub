@@ -82,5 +82,47 @@
     "featured": true,
     "source": "Website",
     "description": "Junior Software Developer\nPosition: Junior Software Developer\n\nExperience Required: 0 Years (Fresh Graduates Encouraged to Apply)\nEmployment Type: Full-time\nWork Location: Addis Ababa\n\nApplication Deadline: 09/01/26\n\nMain Duty:\nPrepare and customize reports for ERP modules based on customer demands and reporting requirements\nAssist in the design, development, testing, and maintenance of software applications\nWrite clean, efficient, and maintainable code\nSupport debugging, troubleshooting, and system enhancements\nCollaborate with senior developers and project teams\nRequired Qualifications:\nBachelor’s degree in Computer Science, Software Engineering, or related fields\nBasic knowledge of programming concepts and software development principles\nFamiliarity with databases and version control systems is an advantage\nStrong problem-solving skills and willingness to learn"
+  },
+  {
+    "id": "8",
+    "title": "Software / Website Developer Internship",
+    "organization": "ZalaTech",
+    "location": "Addis Ababa",
+    "type": "Internship",
+    "tags": ["Software Development", "Website Development", "Intern", "Remote"],
+    "deadline": "",
+    "link": "https://zalatechs.com/jobs/software-website-developer-internship/",
+    "verified": true,
+    "featured": false,
+    "source": "Website",
+    "description": "The Software / Website Development Intern will work on various assigned Software / Website development projects in which they will gain exposure to Software / Website development best practices. This individual will be given the opportunity to be mentored by experienced developers within the team along with leaders across tech and other cross-functional teams.\n\nQualifications:\n- Working towards a Bachelor's degree in a technical field of study associated with Software / Website Engineering\n- Demonstrated passion or interest in one or more of our key industries\n- Excellent communication skills\n- Strong critical thinking and problem-solving skills\n- An aptitude to learn and adapt quickly in a rapidly changing environment\n- Intellectual curiosity and desire to learn new things, techniques, and technologies\n\nResponsibilities:\n- As an intern, you will undertake work on a real business project intended to add value to your team as well as provide you with a great learning opportunity\n- You will add to our test suites and demonstrate completed stories to our stakeholders and clients\n- Collaborate with colleagues in design, product management, and systems architecture to develop solutions and bring great ideas to life"
+  },
+  {
+    "id": "9",
+    "title": "Sales and Marketing Internship / Fresh Graduate",
+    "organization": "ZalaTech",
+    "location": "Addis Ababa",
+    "type": "Internship",
+    "tags": ["Sales", "Marketing", "Intern", "Fresh Graduate", "Remote"],
+    "deadline": "",
+    "link": "https://zalatechs.com/jobs/sales-and-marketing-internship-fresh-graduate/",
+    "verified": true,
+    "featured": false,
+    "source": "Website",
+    "description": "We are searching for a committed intern to join our team. The sales operations intern will complete allocated tasks and projects provided by the manager or assigned staff member. As an intern, you should be able to take instruction, but also work unsupervised when required.\n\nQualifications:\n- Strong Microsoft Office data skills especially, Excel (Formulas, Pivot Tables, etc.)\n- A high school diploma or general education degree (GED) is required\n- College Degree in progress or completed with a major in Business, Marketing, or other relevant degrees\n- Excellent customer service, grammar, verbal and writing skills\n- Resourceful, results-oriented, and well-organized\n- Comfortable performing multi-faceted tasks and projects in conjunction with day-to-day activities with minimal supervision\n\nSales Operations Intern Responsibilities:\n- Working closely with sales staff in completing all tasks\n- Good time management skills\n- Strong knowledge of Microsoft Excel along with Word and PowerPoint\n- Ability to work independently or in a group setting\n- Attend all meetings or events held by the sales department or company\n- Communicate with sales executives to gain information regarding assigned projects\n- Manage deadlines for deliverables"
+  },
+  {
+    "id": "10",
+    "title": "ERP Functional Consultant",
+    "organization": "ZalaTech",
+    "location": "Addis Ababa",
+    "type": "Internship",
+    "tags": ["ERP", "Consultant", "Business Analysis", "Project Management", "Remote"],
+    "deadline": "",
+    "link": "https://zalatechs.com/jobs/erp-functional-consultant/",
+    "verified": true,
+    "featured": false,
+    "source": "Website",
+    "description": "Join ZalaTech, a vibrant and innovative team, working within an organization that values independence, flexibility and personal growth. We are looking for ERP Functional Consultants to join our team responsible for ERP implementation projects.\n\nResponsibilities:\n- Business Analysis\n- ERP Project Management\n- Customer Support\n- Understanding the business workflow\n- Configuring business needs in ERP\n- Ensuring usability of ERP and usability for client business processes\n\nChallenges:\n- Handle ERP implementation in varied Business domains\n- Provide support to customers from different Geographies\n\nMust Have:\n- Qualification: Bachelor's degree or Masters/PGDM or Equivalent degree\n- Experience: 2 years and more\n- Excellent command/understanding of ERP modules\n- Excellent written and verbal command on English"
   }
 ]
