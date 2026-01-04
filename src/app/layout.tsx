@@ -1,6 +1,8 @@
 import "./globals.css";
+
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata = {
   title: "Opportunity Hub",
@@ -18,6 +20,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Navbar />
         <main className="flex-1 container mx-auto px-4">{children}</main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
