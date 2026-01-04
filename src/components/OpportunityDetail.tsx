@@ -6,29 +6,56 @@ type Opportunity = {
   type: string;
   tags: string[];
   deadline: string;
-  link: string;
+  link?: string;
   verified: boolean;
   featured: boolean;
   source: string;
+  description?: string;
 };
+
+import Link from "next/link";
 
 export default function OpportunityDetail({ opportunity }: { opportunity: Opportunity }) {
   return (
-    <div className="border rounded p-6 bg-white shadow">
-      <h1 className="text-2xl font-bold mb-2">{opportunity.title}</h1>
-      <div className="text-gray-700 mb-1">{opportunity.organization} &middot; {opportunity.location}</div>
+    <div className="max-w-2xl mx-auto bg-white rounded-xl shadow p-8 mt-8">
+      <Link href="/opportunities" className="text-blue-600 hover:underline text-sm mb-4 inline-block">&larr; Back to Opportunities</Link>
+      <h1 className="text-3xl font-bold mb-2 text-primary leading-tight">{opportunity.title}</h1>
+      <div className="text-gray-700 mb-1 text-lg font-medium">{opportunity.organization} &middot; {opportunity.location}</div>
       <div className="flex flex-wrap gap-2 mb-2">
-        {opportunity.tags.map(tag => (
-          <span key={tag} className="bg-blue-100 text-blue-700 px-2 py-0.5 rounded text-xs">{tag}</span>
-        ))}
+        {(opportunity.tags && opportunity.tags.length > 0) ? opportunity.tags.map(tag => (
+          <span key={tag} className="bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full text-xs font-semibold">{tag}</span>
+        )) : <span className="text-xs text-gray-400">No tags</span>}
       </div>
-      <div className="mb-2 text-sm">Type: {opportunity.type}</div>
-      <div className="mb-2 text-sm">Deadline: {opportunity.deadline}</div>
-      <div className="mb-2 text-sm">Source: {opportunity.source}</div>
-      {opportunity.verified && <span className="inline-block mb-2 text-green-600 text-xs font-medium">Verified</span>}
-      {opportunity.featured && <span className="inline-block mb-2 ml-2 text-yellow-700 bg-yellow-200 px-2 py-1 rounded text-xs">Featured</span>}
-      <a href={opportunity.link} target="_blank" rel="noopener noreferrer" className="block mt-4 bg-blue-600 text-white px-4 py-2 rounded text-center font-semibold hover:bg-blue-700">Apply / Learn More</a>
-      <a href="https://t.me/opp_hub" target="_blank" rel="noopener noreferrer" className="block mt-2 text-blue-600 underline text-center">Share to Telegram</a>
+      <div className="mb-2 text-sm">Type: <span className="font-semibold">{opportunity.type}</span></div>
+      <div className="mb-2 text-sm">Deadline: <span className="font-semibold">{opportunity.deadline}</span></div>
+      <div className="mb-2 text-sm">Source: <span className="font-semibold">{opportunity.source}</span></div>
+      <div className="mb-4">
+        {opportunity.verified && <span className="inline-block mr-2 text-green-600 text-xs font-medium">Verified</span>}
+        {opportunity.featured && <span className="inline-block text-yellow-700 bg-yellow-200 px-2 py-1 rounded text-xs font-semibold">Featured</span>}
+      </div>
+      {/* Job Description and Requirements */}
+      {opportunity.description && (
+        <div className="prose prose-blue max-w-none mb-6 whitespace-pre-line text-gray-800">
+          {opportunity.description}
+        </div>
+      )}
+      {/* Application Link Underneath Details */}
+      <div className="mt-8 flex justify-center">
+        {opportunity.link && opportunity.link.trim() !== "" ? (
+          <a
+            href={opportunity.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-blue-600 text-white px-6 py-3 rounded-lg text-lg font-bold shadow hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 transition-colors duration-150"
+            aria-label={`Apply for ${opportunity.title}`}
+            tabIndex={0}
+          >
+            Apply Now
+          </a>
+        ) : (
+          <span className="text-gray-400 italic">No application link provided.</span>
+        )}
+      </div>
     </div>
   );
 }
